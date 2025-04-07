@@ -31,8 +31,3 @@ position: relative;
 .image-container img {
      max-width: 45%;
 }
-
-.source, .target {
-    border: 1px solid #ccc;
-    padding: 10px;
-}
