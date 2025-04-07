@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#source {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #007bff;
+    background-color: #e7f3ff;
+    cursor: grab;
+    margin-right: 20px;
+}
+
+#target {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #28a745;
+    background-color: #f9f9f9;
+}
+
+#target.dragover {
+    border-color: #218838;
+    background-color: #e6ffe6;
+}
