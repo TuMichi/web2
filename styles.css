@@ -23,9 +23,21 @@ position: relative;
 
 .image-container {
     display: flex;
-    justify-content: space-between;
+   justify-content: space-around; /* Ajusta la separación entre los contenedores */
+    align-items: center;
+    margin-top: 20px;
 }
 
 .image-container img {
      max-width: 45%; /* Ajusta este valor según sea necesario */
+}
+
+.image-container {
+    display: flex;
+   /* Agrega margen superior si es necesario */
+}
+
+.source, .target {
+    border: 1px solid #ccc; /* Añade un borde para distinguir los contenedores */
+    padding: 10px;
 }
