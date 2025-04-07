@@ -23,16 +23,16 @@ position: relative;
 
 .image-container {
     display: flex;
-   justify-content: space-around; /* Ajusta la separación entre los contenedores */
+   justify-content: space-around;
     align-items: center;
     margin-top: 20px;
 }
 
 .image-container img {
-     max-width: 45%; /* Ajusta este valor según sea necesario */
+     max-width: 45%;
 }
 
 .source, .target {
-    border: 1px solid #ccc; /* Añade un borde para distinguir los contenedores */
+    border: 1px solid #ccc;
     padding: 10px;
 }
