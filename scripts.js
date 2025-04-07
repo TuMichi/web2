@@ -1,14 +1,14 @@
-function allowDrop(e) {
-    e.preventDefault();
+function allowDrop(event) {
+    event.preventDefault();
 }
 
-function drag(e) {
-    e.dataTransfer.setData("text", e.target.id);
+function drag(event) {
+    event.dataTransfer.setData("text", event.target.id);
 }
 
-function drop(e) {
-    e.preventDefault();
-    var data = e.dataTransfer.getData("text");
+function drop(event) {
+    event.preventDefault();
+    var data = event.dataTransfer.getData("text");
     var draggedElement = document.getElementById(data);
-    e.target.appendChild(draggedElement);
+    event.target.appendChild(draggedElement);
 }
