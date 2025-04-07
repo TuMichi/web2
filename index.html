@@ -8,14 +8,12 @@
 </head>
 <body>
     <div class="image-container">
-        <div id="source" class="source" draggable="true">
+        <div id="source" class="source" draggable="true" ondragstart="drag(e)">
             <img id="Lumi" src="iconos/Lumi1-pfp.webp" alt="Lumi" height="50" width="50">
-            <area src="iconos/Lumi1-pfp.webp" height="50" width="50">
         </div>
     
-        <div id="target" class="target">
+        <div id="target" class="target" ondrop="drop(event)" ondragover="allowDrop(e)">
             <img src="images/AguasHTMap.webp" alt="Aguas" height="150" width="250">
-            <area src="images/AguasHTMap.webp" height="150" width="250">
         </div>
     <div>
     <script src="scripts.js"></script>
