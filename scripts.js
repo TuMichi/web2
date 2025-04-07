@@ -1,16 +1,14 @@
-const source = document.querySelector('#source');
-const target = document.querySelector('#target');
+function allowDrop(event) {
+    event.preventDefault();
+}
 
-source.addEventListener('dragstart', (e) => {
-        e.dataTransfer.setData('text/plain', e.target.id);
-})
+function drag(event) {
+    event.dataTransfer.setData("text", event.target.id);
+}
 
-target.addEventListener('dragover', (e) => {
-        e.preventDefault();
-})
-
-target.addEventListener('drop', (e) => {
-        e.preventDefault();
-        const sourceID = e.dataTransfer.getData('text/plain');
-        e.target.appendChild(document.getElementById(sourceID));
-})
+function drop(event) {
+    event.preventDefault();
+    var data = event.dataTransfer.getData("text");
+    var draggedElement = document.getElementById(data);
+    event.target.appendChild(draggedElement);
+}
