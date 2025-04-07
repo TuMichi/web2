@@ -11,7 +11,6 @@ target.addEventListener('dragover', (e) => {
 
 target.addEventListener('drop', (e) => {
         e.preventDefault();
-        target.classList.remove('dragover');
         const sourceID = e.dataTransfer.getData('text/plain');
         e.target.appendChild(document.getElementById(sourceID));
 })
