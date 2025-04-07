@@ -32,11 +32,6 @@ position: relative;
      max-width: 45%; /* Ajusta este valor según sea necesario */
 }
 
-.image-container {
-    display: flex;
-   /* Agrega margen superior si es necesario */
-}
-
 .source, .target {
     border: 1px solid #ccc; /* Añade un borde para distinguir los contenedores */
     padding: 10px;
